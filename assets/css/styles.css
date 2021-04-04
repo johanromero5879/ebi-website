@@ -1,0 +1,65 @@
+.navbar{
+    background-color: #e29f72;
+}
+
+#banner{
+    background-image: url("../img/library4k.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 450%;
+    width: 100%;
+    height: 600px;
+}
+
+.panel{
+    background-color: rgba(33, 33, 33, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.brand-logo{
+    margin-top: 9px;
+    margin-left: 16px;
+}
+
+.integrants{
+    display: grid;
+    
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.avatar{
+    text-align: center;
+}
+
+.avatar img{
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+}
+
+.section.bg{
+    background: #ffb786;
+}
+
+.section-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section img{
+    width: 420px;
+    height: 300px
+}
+
+@media screen and (max-width: 600px){
+    .section img{
+        width: 320px;
+        height: 150px
+    }
+} 

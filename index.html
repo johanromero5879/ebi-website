@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,378 +10,346 @@
     <title>EBI - Easy Book Inventory</title>
 
     <!-- Compiled and minified CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="shortcut icon" href="./assets/img/icon.png">
-    
-    <style>
-        .navbar{
-            background-color: #e29f72;
-        }
 
-        #landing{
-            background-image: url("assets/img/library4k.png");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 100% 450%;
-            width: 100%;
-            height: 600px;
-        }
-
-        .panel{
-            background-color: rgba(33, 33, 33, 0.8);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-        }
-
-        .brand-logo{
-            margin-top: 9px;
-            margin-left: 16px;
-        }
-
-        .integrants{
-            display: grid;
-            
-            grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-        }
-
-        .avatar{
-            text-align: center;
-        }
-
-        .avatar img{
-            border-radius: 100px;
-            width: 150px;
-            height: 150px;
-        }
-
-        .section.bg{
-            background: #ffb786;
-        }
-        
-        .section-image{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .section img{
-            width: auto;
-        }
-
-        /*Planteacion del Proyecto Diseño*/
-        .Texto_1{
-            color: #000000;
-	        text-align: justify;}
-        
-        /*Justificacion del Proyecto Diseño*/
-        .Texto_02{
-	        text-align: justify;
-        }
-        #Titulo_obb{
-            text-align: center;
-        }
-        .Texto_ob1{
-            text-align: justify;
-        }
-        .Texto_ob2{
-            text-align: justify;
-        }
-    </style>
 </head>
-<body> 
+
+<body>
     <nav class="navbar navbar-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand mr-auto" href="#">
                 <img src="./assets/img/logo.png" alt="logo" width="70" height="43">
                 Easy Book Inventory
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                      <a class="nav-link" href="#integrantes">Integrantes</a>
+                        <a class="nav-link" href="#integrantes">Integrantes</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#metodologia-agil">Metodologia agil</a>
-                      </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#planteamiento">Planteamiento del problema</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#justificacion">Justificación</a>
+                        <a class="nav-link" href="#planteamiento">Planteamiento del problema</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#objetivos">Objetivos</a>
+                        <a class="nav-link" href="#justificacion">Justificación</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#alcance">Alcance</a>
+                        <a class="nav-link" href="#objetivos">Objetivos</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#beneficiarios">Beneficiarios</a>
+                        <a class="nav-link" href="#alcance">Alcance</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#impacto">Impacto</a>
+                        <a class="nav-link" href="#beneficiarios">Beneficiarios</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#restricciones">Restricciones</a>
+                        <a class="nav-link" href="#impacto">Impacto</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#productos">Productos o resultados</a>
+                        <a class="nav-link" href="#restricciones">Restricciones</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#tecnicas">Técnicas recolección de datos</a>
+                        <a class="nav-link" href="#productos">Productos o resultados</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#cronograma">Cronograma actividades</a>
+                        <a class="nav-link" href="#tecnicas">Técnicas recolección de datos</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#mapa-procesos">Mapa de procesos</a>
+                        <a class="nav-link" href="#cronograma">Cronograma actividades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mapa-procesos">Mapa de procesos</a>
                     </li>
                 </ul>
             </div>
         </div>
-            
-        
+
+
     </nav>
-    
-    <div id="landing">
+
+    <div id="banner">
         <div class="panel">
-            <img src="./assets/img/logotipo_b.png" alt="logo" width="500" height="500">
+            <img src="./assets/img/logotipo_b.png" alt="logo" width="350" height="350">
         </div>
-    </div>  
-     
-    <!-- Integrantes -->
-    <div id="integrantes" class="row mt-3">
-        <h3 class="text-center mb-5">Integrantes</h3>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="avatar">
-                    <img src="./assets/img/avatar1.png" alt="Avatar">
-                </div>
-                <p class="text-center">Sebastian Pachón</p>
-            </div>
-            <div class="col-md-4">
-                <div class="avatar">
-                    <img src="./assets/img/avatar2.png" alt="Avatar">
-                </div>
-                <p class="text-center">Juan Ospina</p>
-            </div>
-            <div class="col-md-4">
-                <div class="avatar">
-                    <img src="./assets/img/avatar3.png" alt="Avatar">
-                </div>
-                <p class="text-center">Johan Romero</p>
-            </div>
-            <div class="col-md-6">
-                <div class="avatar">
-                    <img src="./assets/img/avatar4.png" alt="Avatar">
-                </div>
-                <p class="text-center">Sebastian Vicaña</p>
-            </div>
-            <div class="col-md-6">
-                <div class="avatar">
-                    <img src="./assets/img/avatar5.png" alt="Avatar">
-                </div>
-                <p class="text-center">Neyder Perilla</p>
-            </div>
-        </div>
+        
     </div>
-    
-    <!--  Formato
-        <div class="row mt-2 p-4 section bg">
+
+    <div class="container-fluid">
+        <!-- Integrantes -->
+        <div id="integrantes" class="row mt-3">
+            <h3 class="text-center mb-5">Integrantes</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="avatar">
+                        <img src="./assets/img/avatar1.png" alt="Avatar">
+                    </div>
+                    <p class="text-center">Sebastian Pachón</p>
+                    <p class="text-center">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magni suscipit? Explicabo blanditiis corporis, ducimus delectus omnis provident dolor soluta!
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <div class="avatar">
+                        <img src="./assets/img/avatar2.png" alt="Avatar">
+                    </div>
+                    <p class="text-center">Juan Ospina</p>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magni suscipit? Explicabo blanditiis corporis, ducimus delectus omnis provident dolor soluta!</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="avatar">
+                        <img src="./assets/img/avatar3.png" alt="Avatar">
+                    </div>
+                    <p class="text-center">Johan Romero</p>
+                    <p class="text-center">
+                        Desarrollador web con habilidades y conocimientos en Javascript y frameworks como React y Vue.
+                        Incopora arquitecturas MERN o MEVN en el backend. Manejo de bases de datos SQL y NoSQL.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="avatar">
+                        <img src="./assets/img/avatar4.png" alt="Avatar">
+                    </div>
+                    <p class="text-center">Sebastian Vicaña</p>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magni suscipit? Explicabo blanditiis corporis, ducimus delectus omnis provident dolor soluta!</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="avatar">
+                        <img src="./assets/img/avatar5.png" alt="Avatar">
+                    </div>
+                    <p class="text-center">Neyder Perilla</p>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magni suscipit? Explicabo blanditiis corporis, ducimus delectus omnis provident dolor soluta!</p>
+                </div>
+            </div>
+        </div>
+
+        <!--  Metodologia agil -->
+        <div id="metodologia-agil" class="row mt-2 p-4 section bg">
+            <div class="col-md-6 section-image">
+                <img src="./assets/img/scrum.PNG">
+            </div>
             <div class="col-md-6">
-                <h3>Planteamiento del problema fgfg</h3>
+                <h3 id="Titulo_21">METODOLOGIA AGIL</h3>
+                <p class="Texto_1">
+                    <br>
+                    la metodología que se utilizo fue scrum cuyo propósito es solventar problemas, ágil en la toma de
+                    decisiones y así evitando errores a futuro, tomamos los 6 ciclos de vida del programa como lo son
+                    fase inicial, fase de definición, fase ejecución, fase entrega, fase soporte y mantenimiento, y fase
+                    final.
+                    <br><br>
+                    En la primera fase se concluyo lo que son los criterios, en la segunda la definición de tareas al
+                    Team para, en la ejecución siguiendo los reglamentos de la mitología scrum se generan reuniones para
+                    solventar todos aquellos problemas, y a si mismo dar un mejor enfoque al proceso de construcción, ya
+                    por último en sus fases 4, 5 y 6 son más técnicas en el proceso enfocadas a la finalización del
+                    proyecto.
+
+                </p>
                 <p>
-                    En la actualidad se presentan diversas controversias frente a la problemática de la administración de inventarios moderna, en diferentes negocios o establecimientos comerciales; las librerías en su gran mayoría manejan el inventariado de manera manual sin intervención de software alguno y sin alguna verificación segura actual, por ende, surge la incógnita. ¿Cómo administrar los inventarios de manera efectiva en una librería en la actualidad? 
-                    <br><br>
-                    Todo local o establecimiento, el cual maneje una producción, comercialización y administración de sus productos, necesita mantener un inventario, ya que con la ausencia de este se presentan problemas como las pérdidas económicas, la incoherencia contable, sobreproducción, escases de productos e ineficiencia en las ventas, esto solo referenciando a la aplicabilidad del inventariado. En el presente, el recuento de bienes (inventariado) es realizado frente a un entorno digital generando una eficiencia mayor en todo proceso mercantil y/o administración, así como para llevar el debido proceso legal es necesario tener registros de los inventarios, siendo una necesidad creciente la implementación del software en todos estos procesos. 
-                    <br><br>
-                    Teniendo Presente todas las dificultades aportadas, se puede inferir la necesidad de aplicar un sistema de inventarios capaz de solventar todas estas penurias, por medio un sistema optimo aplicado a una librería. 
-                    <br><br>
+
                 </p>
             </div>
-            <div class="col-md-6 section-image">
-                <img src="./assets/img/avatar5.png" alt="Avatar">
-            </div>
-        </div> 
-    -->
-    
-    <!--  Metodologia agil -->
-    <div id="metodologia-agil" class="row mt-2 p-4 section bg">
-        <div class="col-md-6 section-image">
-            <img src="./assets/img/scrum.PNG" >
         </div>
-        <div class="col-md-6">
-            <h3 id="Titulo_21">METODOLOGIA AGIL</h3>
-            <p class = "Texto_1">
-            <br>
-            la metodología que se utilizo fue scrum cuyo propósito es solventar problemas, ágil en la toma de decisiones y así evitando errores a futuro, tomamos los 6 ciclos de vida del programa como lo son fase inicial, fase de definición, fase ejecución, fase entrega, fase soporte y mantenimiento, y fase final.
-            <br><br>
-            En la primera fase se concluyo lo que son los criterios, en la segunda la definición de tareas al Team para, en la ejecución siguiendo los reglamentos de la mitología scrum se generan reuniones para solventar todos aquellos problemas, y a si mismo dar un mejor enfoque al proceso de construcción, ya por último en sus fases 4, 5 y 6 son más técnicas en el proceso enfocadas a la finalización del proyecto.
 
-            </p>
-            <p>
-                
-            </p>
-        </div>
-    </div> 
-
-    <!-- Plantamiento Del problema Codificacion-->
+        <!-- Plantamiento Del problema Codificacion-->
         <div id="planteamiento" class="row mt-2 p-4 section">
             <div class="col-md-6">
                 <br>
                 <h3 id="Titulo_01">PLANTEAMIENTO DEL PROBLEMA</h3>
-                <p class = "Texto_1">
-                    <br>   
-                    En la actualidad se presentan diversas controversias frente a la problemática de la administración de inventarios moderna, en diferentes negocios o establecimientos comerciales; las librerías en su gran mayoría manejan el inventariado de manera manual sin intervención de software alguno y sin alguna verificación segura actual, por ende, surge la incógnita. ¿Cómo administrar los inventarios de manera efectiva en una librería en la actualidad? 
+                <p class="Texto_1">
+                    <br>
+                    En la actualidad se presentan diversas controversias frente a la problemática de la administración
+                    de inventarios moderna, en diferentes negocios o establecimientos comerciales; las librerías en su
+                    gran mayoría manejan el inventariado de manera manual sin intervención de software alguno y sin
+                    alguna verificación segura actual, por ende, surge la incógnita. ¿Cómo administrar los inventarios
+                    de manera efectiva en una librería en la actualidad?
                     <br><br>
-                    Todo local o establecimiento, el cual maneje una producción, comercialización y administración de sus productos, necesita mantener un inventario, ya que con la ausencia de este se presentan problemas como las pérdidas económicas, la incoherencia contable, sobreproducción, escases de productos e ineficiencia en las ventas, esto solo referenciando a la aplicabilidad del inventariado. En el presente, el recuento de bienes (inventariado) es realizado frente a un entorno digital generando una eficiencia mayor en todo proceso mercantil y/o administración, así como para llevar el debido proceso legal es necesario tener registros de los inventarios, siendo una necesidad creciente la implementación del software en todos estos procesos. 
+                    Todo local o establecimiento, el cual maneje una producción, comercialización y administración de
+                    sus productos, necesita mantener un inventario, ya que con la ausencia de este se presentan
+                    problemas como las pérdidas económicas, la incoherencia contable, sobreproducción, escases de
+                    productos e ineficiencia en las ventas, esto solo referenciando a la aplicabilidad del inventariado.
+                    En el presente, el recuento de bienes (inventariado) es realizado frente a un entorno digital
+                    generando una eficiencia mayor en todo proceso mercantil y/o administración, así como para llevar el
+                    debido proceso legal es necesario tener registros de los inventarios, siendo una necesidad creciente
+                    la implementación del software en todos estos procesos.
                     <br><br>
-                    Teniendo Presente todas las dificultades aportadas, se puede inferir la necesidad de aplicar un sistema de inventarios capaz de solventar todas estas penurias, por medio un sistema optimo aplicado a una librería. 
+                    Teniendo Presente todas las dificultades aportadas, se puede inferir la necesidad de aplicar un
+                    sistema de inventarios capaz de solventar todas estas penurias, por medio un sistema optimo aplicado
+                    a una librería.
                     <br><br>
                 </p>
             </div>
             <div class="col-md-6 section-image">
-                <img src="./assets/img/planteacion.png" alt="Avatar">
+                <img src="./assets/img/planteacion.png">
             </div>
-            
+
         </div>
-    
-    <!-- Justificacion Del Proyecto Codificacion-->
+
+        <!-- Justificacion Del Proyecto Codificacion-->
         <div id="justificacion" class="row mt-2 p-4 section bg">
             <div class="col-md-6 section-image">
-                <img src="./assets/img/justificacion.png" alt="Avatar" width="250" height="300">
+                <img src="./assets/img/justificacion.png">
             </div>
             <div class="col-md-6">
                 <br>
-                    <h3 id="Titulo_02">JUSTIFICACIÓN DEL PROYECTO</h3>
-                    <br>
-                 <p class = "Texto_02">
-                Se plantea un sistema capaz de administrar inventarios de establecimientos comerciales básicos conocidos como librerías, generando eficiencia en todos los procesos comerciales realizados por este, donde se busca la gestión correcta de los bienes y la generación de registros apropiados para el establecimiento; así mismo el apoyo frente la vigencia a procesos mercantiles de la economía moderna. Complementado por la apropiación de los conceptos y de los módulos necesarios presentados en el campo de la ingeniería de software. 
-                <br><br>
+                <h3 id="Titulo_02">JUSTIFICACIÓN DEL PROYECTO</h3>
+                <br>
+                <p class="Texto_02">
+                    Se plantea un sistema capaz de administrar inventarios de establecimientos comerciales básicos
+                    conocidos como librerías, generando eficiencia en todos los procesos comerciales realizados por
+                    este, donde se busca la gestión correcta de los bienes y la generación de registros apropiados para
+                    el establecimiento; así mismo el apoyo frente la vigencia a procesos mercantiles de la economía
+                    moderna. Complementado por la apropiación de los conceptos y de los módulos necesarios presentados
+                    en el campo de la ingeniería de software.
+                    <br><br>
                 </p>
             </div>
         </div>
 
-    <!-- Objetivos Del Proyecto Codificacion-->
-    <div id="objetivos" class="row mt-2 p-4 section">
-        <div class="col-md-6">
-            <br>
+        <!-- Objetivos Del Proyecto Codificacion-->
+        <div id="objetivos" class="row mt-2 p-4 section">
+            <div class="col-md-6">
+                <br>
                 <h3 id="Titulo_obb">OBJETIVOS</h3>
                 <br><br>
-            <h4 id="Titulo_ob1"> Objetivo General</h4>
-            <br>
-            <p class = "Texto_ob1">
-                Desarrollar un programa informático que apoye en la gestión eficiente del módulo de inventario que se contempla en una librería.  
-                <br><br>
-            </p>
-            <h4 id="Titulo_ob2"> Objetivos Especificos</h4>
-            <br>
-            <p class = "Texto_ob2">
-            1.  Debe establecer una investigación previa sobre cómo opera la gestión de inventarios dentro de una librería. 
-            <br><br>    
-            2.  Analizar la investigación con el fin de dar una idea de los requisitos que tenga el proyecto. 
-            <br><br>    
-            3.  Detallar los requerimientos antes analizados mediante un documento de requisitos de software. 
-            <br><br>        
-            4.  Establecer la estructura del sistema de información a modo de diseño mediante diagramas UML. 
-            <br><br>
-            5.  Se debe detallar la organización de los datos que se almacenarán en una base de datos mediante un modelo entidad relación y un modelo relacional. 
-            <br><br>
-            6.  Describir en un documento de diseño de software los diagramas y modelos realizados. 
-            <br><br>
-            7.  Basarse del documento de requisitos y de diseño de software para el desarrollo del código fuente del programa. 
-            <br><br>
-            8.  Establecer la metodología y procedimiento de las pruebas. 
-            <br><br>
-            9.  Registrar un documento de casos de prueba del sistema de inventarios. 
-            <br><br>
-            10. las modificaciones realizadas al aplicativo en un documento de control de cambios.  
-            <br><br>
-                </p>       
-        </div>
-        <div class="col-md-6 section-image">
-        
-            <img src="./assets/img/objetivos.png" alt="Avatar" width="450" height="450" >
-        </div>
-    </div>
+                <h4 id="Titulo_ob1"> Objetivo General</h4>
+                <br>
+                <p class="Texto_ob1">
+                    Desarrollar un programa informático que apoye en la gestión eficiente del módulo de inventario que
+                    se contempla en una librería.
+                    <br><br>
+                </p>
+                <h4 id="Titulo_ob2"> Objetivos Especificos</h4>
+                <br>
+                <p class="Texto_ob2">
+                    1. Debe establecer una investigación previa sobre cómo opera la gestión de inventarios dentro de una
+                    librería.
+                    <br><br>
+                    2. Analizar la investigación con el fin de dar una idea de los requisitos que tenga el proyecto.
+                    <br><br>
+                    3. Detallar los requerimientos antes analizados mediante un documento de requisitos de software.
+                    <br><br>
+                    4. Establecer la estructura del sistema de información a modo de diseño mediante diagramas UML.
+                    <br><br>
+                    5. Se debe detallar la organización de los datos que se almacenarán en una base de datos mediante un
+                    modelo entidad relación y un modelo relacional.
+                    <br><br>
+                    6. Describir en un documento de diseño de software los diagramas y modelos realizados.
+                    <br><br>
+                    7. Basarse del documento de requisitos y de diseño de software para el desarrollo del código fuente
+                    del programa.
+                    <br><br>
+                    8. Establecer la metodología y procedimiento de las pruebas.
+                    <br><br>
+                    9. Registrar un documento de casos de prueba del sistema de inventarios.
+                    <br><br>
+                    10. las modificaciones realizadas al aplicativo en un documento de control de cambios.
+                    <br><br>
+                </p>
+            </div>
+            <div class="col-md-6 section-image">
 
-    <!-- Alcance Del Proyecto Codificacion-->
-    <div id="alcance" class="row mt-2 p-4 section bg">
-        <div class="col-md-6 section-image">
-            <img src="./assets/img/alcance.png">
+                <img src="./assets/img/objetivos.png">
+            </div>
         </div>
-        <div class="col-md-6">
-            <br>
+
+        <!-- Alcance Del Proyecto Codificacion-->
+        <div id="alcance" class="row mt-2 p-4 section bg">
+            <div class="col-md-6 section-image">
+                <img src="./assets/img/alcance.png">
+            </div>
+            <div class="col-md-6">
+                <br>
                 <h3 id="Titulo_al">ALCANCE DEL PROYECTO</h3>
                 <br>
-            <p class = "Texto_al">
-            En el alcance del siguiente de proyecto nos enfocaremos en un software a mediana escala en pro al soporte de información a un administrador que necesite el uso de datos radicados en un almacenaje o bases de datos, se abracaran todas estas necesidades soportadas bajo una página web cuya funcionalidad principal es disponer de información y análisis de los datos almacenados en tiempo real.  
-            <br><br>
-            El siguiente software posee entre sus requisitos controlar y administrar la información de libros en dicha bodega virtual, así mismo se organizarán dependiendo la información esencial del libro o datos que el sujeto externo solicite para su uso.  
-            <br><br>
-            Aspectos principales del alcance del proyecto:  
-            <br><br>
-            1.   Crear una aplicación web interactiva con un administrador cuya funcionalidad está enfocada en un modelo de datos electrónicos, diseño web, flujo de información en conexión doble, tanto en su modificación, comprobación y recolección. 
-            <br><br>
-            2.  Análisis de datos incorporados en la misma en frecuencia a la información explicita en el libro o derivados que administrador solicite. 
-            <br>
-        </p>
+                <p class="Texto_al">
+                    En el alcance del siguiente de proyecto nos enfocaremos en un software a mediana escala en pro al
+                    soporte de información a un administrador que necesite el uso de datos radicados en un almacenaje o
+                    bases de datos, se abracaran todas estas necesidades soportadas bajo una página web cuya
+                    funcionalidad principal es disponer de información y análisis de los datos almacenados en tiempo
+                    real.
+                    <br><br>
+                    El siguiente software posee entre sus requisitos controlar y administrar la información de libros en
+                    dicha bodega virtual, así mismo se organizarán dependiendo la información esencial del libro o datos
+                    que el sujeto externo solicite para su uso.
+                    <br><br>
+                    Aspectos principales del alcance del proyecto:
+                    <br><br>
+                    1. Crear una aplicación web interactiva con un administrador cuya funcionalidad está enfocada en un
+                    modelo de datos electrónicos, diseño web, flujo de información en conexión doble, tanto en su
+                    modificación, comprobación y recolección.
+                    <br><br>
+                    2. Análisis de datos incorporados en la misma en frecuencia a la información explicita en el libro o
+                    derivados que administrador solicite.
+                    <br>
+                </p>
+            </div>
         </div>
-    </div>
 
-    <!-- Beneficiarios Del Proyecto Codificacion-->
-        <div id="beneficiarios"  class="row mt-2 p-4 section">
+        <!-- Beneficiarios Del Proyecto Codificacion-->
+        <div id="beneficiarios" class="row mt-2 p-4 section">
             <div class="col-md-6">
                 <h3>BENEFICIARIOS</h3>
                 <p style="text-align: justify;">
-                    El presente proyecto está diseñado al soporte y disposición de información a los administradores o grupos que desean y tengan los permisos necesarios para consultas de la bodega virtual. A la hora de adquirir un dato en específico los administradores tienden colapsar entre la inmensa cantidad de información existente. Así mismo tendrá un impacto externo al software principal como los son los clientes debido a la rapidez de información que solicite.
+                    El presente proyecto está diseñado al soporte y disposición de información a los administradores o
+                    grupos que desean y tengan los permisos necesarios para consultas de la bodega virtual. A la hora de
+                    adquirir un dato en específico los administradores tienden colapsar entre la inmensa cantidad de
+                    información existente. Así mismo tendrá un impacto externo al software principal como los son los
+                    clientes debido a la rapidez de información que solicite.
                 </p>
             </div>
             <div class="col-md-6 section-image">
                 <img src="./assets/img/beneficiarios.png">
             </div>
-        </div>  
-
-    <!-- Impacto Del Proyecto Codificacion-->
-    <div id="impacto" class="row mt-2 p-4 section bg">
-        <div class="col-md-6 section-image">
-            <img src="./assets/img/impacto.png">
         </div>
-        <div class="col-md-6">
-            <h3>IMPACTO</h3>
-            <p style="text-align: justify;">
-                La implementación de nuestro proyecto impacta de manera positiva debido a que con este podemos llevar a cabo de manera ordenada un registro de las unidades disponibles allí, permitiéndonos monitorizar de manera real toda la información sobre el inventario. 
-                <br><br>
-                También permite la optimización de flujo de trabajo debido a la facilidad con la que podemos acceder a la información, posibilitándonos la realización de distintas labores en menos tiempo, la accesibilidad a un registro actualizado y su correcto funcionamiento en distintos dispositivos.  
-            </p>
-        </div>
-        
-    </div>  
 
-     <!-- Restricciones Del Proyecto Codificacion-->
+        <!-- Impacto Del Proyecto Codificacion-->
+        <div id="impacto" class="row mt-2 p-4 section bg">
+            <div class="col-md-6 section-image">
+                <img src="./assets/img/impacto.png">
+            </div>
+            <div class="col-md-6">
+                <h3>IMPACTO</h3>
+                <p style="text-align: justify;">
+                    La implementación de nuestro proyecto impacta de manera positiva debido a que con este podemos
+                    llevar a cabo de manera ordenada un registro de las unidades disponibles allí, permitiéndonos
+                    monitorizar de manera real toda la información sobre el inventario.
+                    <br><br>
+                    También permite la optimización de flujo de trabajo debido a la facilidad con la que podemos acceder
+                    a la información, posibilitándonos la realización de distintas labores en menos tiempo, la
+                    accesibilidad a un registro actualizado y su correcto funcionamiento en distintos dispositivos.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Restricciones Del Proyecto Codificacion-->
         <div id="restricciones" class="row mt-2 p-4 section">
             <div class="col-md-6">
                 <h3>RESTRICCIONES</h3>
                 <p style="text-align: justify;">
-                    Para la entrega y posterior muestra del proyecto el tiempo de entrega es de 1 semestre de trabajo teniendo en cuenta de que somos personas en el proceso de formación profesional, además de su enfoque es en el registro e inventarios, por consiguiente, la parte de compras y ventas no se va a implementar.
+                    Para la entrega y posterior muestra del proyecto el tiempo de entrega es de 1 semestre de trabajo
+                    teniendo en cuenta de que somos personas en el proceso de formación profesional, además de su
+                    enfoque es en el registro e inventarios, por consiguiente, la parte de compras y ventas no se va a
+                    implementar.
                 </p>
             </div>
             <div class="col-md-6 section-image">
                 <img src="./assets/img/restricciones.png">
             </div>
-        </div>  
+        </div>
 
-    <!-- Riesgos Del Proyecto Codificacion-->
+        <!-- Riesgos Del Proyecto Codificacion-->
         <div id="riesgos" class="row mt-2 p-4 section bg">
             <div class="col-md-6 section-image">
                 <img src="./assets/img/riesgos.png">
@@ -388,29 +357,48 @@
             <div class="col-md-6">
                 <h3>RIESGOS</h3>
                 <p style="text-align: justify;">
-                    Se pueden contemplar varios riesgos en el funcionamiento del proyecto tanto operativa como en el software a implementar.
+                    Se pueden contemplar varios riesgos en el funcionamiento del proyecto tanto operativa como en el
+                    software a implementar.
                     <br><br>
-                    En la parte operativa (no se generan por fallos en el sistema) contemplamos que se pueden presentar errores por mal ingreso en la información, por otro lado, está en que el usuario no se encuentre calificado para el uso de dicho sistema. Otro de los aspectos que pueden entorpecer el uso del sistema es, no tener orden al momento de realizar el inventario ya que esto puede generar en que haya duplicidad en la información, que no se inventaríe algunas existencias y la perdida de las mismas. 
+                    En la parte operativa (no se generan por fallos en el sistema) contemplamos que se pueden presentar
+                    errores por mal ingreso en la información, por otro lado, está en que el usuario no se encuentre
+                    calificado para el uso de dicho sistema. Otro de los aspectos que pueden entorpecer el uso del
+                    sistema es, no tener orden al momento de realizar el inventario ya que esto puede generar en que
+                    haya duplicidad en la información, que no se inventaríe algunas existencias y la perdida de las
+                    mismas.
                     <br><br>
-                    En la parte sistemática se contempla que pueden ocurrir diferentes fallas al momento de ejecutarse el sistema, en las cuales están, eventuales caídas del servidor que se pueden generar por diferentes aspectos, tales como la caída del internet o bajones en el flujo de energía, lo cual puede desencadenar una pérdida de datos, también está el riesgo de que el equipo en el cual se encuentre ejecutando el sistema presente algún fallo ya sea a nivel de software como de hardware. 
+                    En la parte sistemática se contempla que pueden ocurrir diferentes fallas al momento de ejecutarse
+                    el sistema, en las cuales están, eventuales caídas del servidor que se pueden generar por diferentes
+                    aspectos, tales como la caída del internet o bajones en el flujo de energía, lo cual puede
+                    desencadenar una pérdida de datos, también está el riesgo de que el equipo en el cual se encuentre
+                    ejecutando el sistema presente algún fallo ya sea a nivel de software como de hardware.
                     <br><br>
-                    Dichas fallas se pueden prever en lo mayor posible, pero esto no evita en un cien por ciento la posibilidad de que sucedan en algún momento, por lo que es necesario llevar un seguimiento y un chequeo constante, tanto al sistema como al entorno (sitio) que comprenda el inventario.
+                    Dichas fallas se pueden prever en lo mayor posible, pero esto no evita en un cien por ciento la
+                    posibilidad de que sucedan en algún momento, por lo que es necesario llevar un seguimiento y un
+                    chequeo constante, tanto al sistema como al entorno (sitio) que comprenda el inventario.
                 </p>
             </div>
-        </div>  
-    <!-- Productos o resultados Del Proyecto Codificacion-->
+        </div>
+        <!-- Productos o resultados Del Proyecto Codificacion-->
         <div id="productos" class="row mt-2 p-4 section">
             <div class="col-md-6">
                 <h3>PRODUCTOS</h3>
                 <p style="text-align: justify;">
-                    El resultado de este proyecto radica en brindar facilidad y orden al momento de llevar un inventario y a llevar un control de todo lo que se ingresa y se despacha del mismo, para asi brindarle al usuario una herramienta útil que le permita al usuario acortar los tiempos y le permita acceder a la información de manera más rápida posible, evitando asi trabas en el flujo de la información de los ingresos y egresos físicos de la bodega sabiendo fecha y hora exacta de entrada y salida del producto, lo cual le permite al usuario saber con exactitud cuánto tiempo lleva cada producto en su almacén y el espacio que le ocupa, y así generar estrategias para poder administrar mejor dicho inventario.
+                    El resultado de este proyecto radica en brindar facilidad y orden al momento de llevar un inventario
+                    y a llevar un control de todo lo que se ingresa y se despacha del mismo, para asi brindarle al
+                    usuario una herramienta útil que le permita al usuario acortar los tiempos y le permita acceder a la
+                    información de manera más rápida posible, evitando asi trabas en el flujo de la información de los
+                    ingresos y egresos físicos de la bodega sabiendo fecha y hora exacta de entrada y salida del
+                    producto, lo cual le permite al usuario saber con exactitud cuánto tiempo lleva cada producto en su
+                    almacén y el espacio que le ocupa, y así generar estrategias para poder administrar mejor dicho
+                    inventario.
                 </p>
             </div>
             <div class="col-md-6 section-image">
                 <img src="./assets/img/producto.png">
             </div>
-        </div>  
-    <!-- Tecnicas de recolección de datos Del Proyecto Codificacion-->
+        </div>
+        <!-- Tecnicas de recolección de datos Del Proyecto Codificacion-->
         <div id="tecnicas" class="row mt-2 p-4 section bg">
             <div class="col-md-6 section-image">
                 <img src="./assets/img/recoleccion.png">
@@ -418,85 +406,101 @@
             <div class="col-md-6">
                 <h3>TECNICAS DE RECOLECCIÓN DE DATOS</h3>
                 <p style="text-align: justify;">
-                    En el presente proyecto se proponen dos técnicas de recolección de datos discretas y una técnica interactiva, como lo son la investigación, la observación y por último el cuestionario respectivamente, con el fin de extender el campo de aprendizaje curricular en el ambiente propuesto para el mismo. A continuación, se presentan los formatos establecidos frente a las técnicas de recolección propuestas. 
+                    En el presente proyecto se proponen dos técnicas de recolección de datos discretas y una técnica
+                    interactiva, como lo son la investigación, la observación y por último el cuestionario
+                    respectivamente, con el fin de extender el campo de aprendizaje curricular en el ambiente propuesto
+                    para el mismo. A continuación, se presentan los formatos establecidos frente a las técnicas de
+                    recolección propuestas.
                     <br>
-                    Investigación 
+                    Investigación
                     <br>
-                    Mediante esta técnica, el proyecto contempla diferentes ámbitos relacionados con procesos de inventariado común, dentro del espacio estipulado (librería), para ello se presenta un análisis cuantitativo y cualitativo, dentro del alcance del designio. 
+                    Mediante esta técnica, el proyecto contempla diferentes ámbitos relacionados con procesos de
+                    inventariado común, dentro del espacio estipulado (librería), para ello se presenta un análisis
+                    cuantitativo y cualitativo, dentro del alcance del designio.
                     <br>
-                    Observación 
+                    Observación
                     <br>
-                    Continuando con la segunda técnica discreta propuesta, se considera una visión del entorno físico, a un nivel general, planteada en el campo de interés del proyecto, donde se definen aspectos importantes de la finalidad de este, como lo son su funcionamiento, qué características tendrá y de qué manera influirá en la resolución del problema. 
+                    Continuando con la segunda técnica discreta propuesta, se considera una visión del entorno físico, a
+                    un nivel general, planteada en el campo de interés del proyecto, donde se definen aspectos
+                    importantes de la finalidad de este, como lo son su funcionamiento, qué características tendrá y de
+                    qué manera influirá en la resolución del problema.
                     <br>
-                    Cuestionarios 
+                    Cuestionarios
                     <br>
-                    Finalizando la recolección de información, se procede a efectuar una encuesta, capaz de medir el nivel de afinidad, que presentan las partes interesadas internas, frente a aspectos propuestos en la investigación y la observación frente al desarrollo del aplicativo. 
+                    Finalizando la recolección de información, se procede a efectuar una encuesta, capaz de medir el
+                    nivel de afinidad, que presentan las partes interesadas internas, frente a aspectos propuestos en la
+                    investigación y la observación frente al desarrollo del aplicativo.
                     <br>
-                    Para concluir y formalizar toda información propuesta o requerida, se plantean dos formatos con la que se busca generar una apertura completa al siguiente proceso, en los siguientes links.
-                    <br>  
-                    <a href=".\documents\Encuesta De Como Sera El Funcionamiento Interno Del Almacenaje De Libros.docx">1. Encuesta funcionamiento</a>
+                    Para concluir y formalizar toda información propuesta o requerida, se plantean dos formatos con la
+                    que se busca generar una apertura completa al siguiente proceso, en los siguientes links.
+                    <br>
+                    <a href=".\documents\Encuesta De Como Sera El Funcionamiento Interno Del Almacenaje De Libros.docx">1.
+                        Encuesta funcionamiento</a>
                     <br>
                     <a href=".\documents\Formato para formularios de captura de datos.docx">2. Formato</a>
-                    </p>
+                </p>
             </div>
-        </div> 
-        
-    <!-- Cronogramas -->
-    <div id="cronograma" class="row mt-2 p-4 section">
-        <div class="col-md-4 offset-4">
-            <h3 class="text-center">CRONOGRAMAS DE ACTIVIDADES</h3>
-            <ul class="list-group">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    General
-                    <a href="./documents/GANTT GENERAL.xlsx">
-                        <i class="fas fa-file-download"></i>
-                    </a>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Sebastian Pachon
-                    <a href="./documents/GANTT SEBASTIAN PACHON.xlsx">
-                        <i class="fas fa-file-download"></i>
-                    </a>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Johan Romero
-                    <a href="./documents/GANTT  JOHAN.xlsx">
-                        <i class="fas fa-file-download"></i>
-                    </a>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Juan Pablo Ospina
-                    <a href="./documents/GANTT  JUAN PABLO.xlsx">
-                        <i class="fas fa-file-download"></i>
-                    </a>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Sebastian Vicaña
-                    <a href="./documents/GANTT VICAÑA.xlsx">
-                        <i class="fas fa-file-download"></i>
-                    </a>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Neyder Perilla
-                    <a href="./documents/GANTT NEYDER.xlsx">
-                        <i class="fas fa-file-download"></i>
-                    </a>
-                </li>
-              </ul>
-
         </div>
-    </div> 
-    <!-- Mapa de procesos -->
-    <div id="mapa-procesos" class="row mt-2 p-4 section">
-        <div class="col-md-4 offset-4">
-            <h3 Class= "text-center">MAPA DE PROCESOS</h3>
-            <p>
-                <br>
-                <img src="./assets/img/Mapa de procesos.png" align="center" alt="Mapa de procesos">
-            </p>
+
+        <!-- Cronogramas -->
+        <div id="cronograma" class="row mt-2 p-4 section">
+            <div class="col-md-4 offset-md-4">
+                <h3 class="text-center">CRONOGRAMAS DE ACTIVIDADES</h3>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        General
+                        <a href="./documents/GANTT GENERAL.xlsx">
+                            <i class="fas fa-file-download"></i>
+                        </a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Sebastian Pachon
+                        <a href="./documents/GANTT SEBASTIAN PACHON.xlsx">
+                            <i class="fas fa-file-download"></i>
+                        </a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Johan Romero
+                        <a href="./documents/GANTT  JOHAN.xlsx">
+                            <i class="fas fa-file-download"></i>
+                        </a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Juan Pablo Ospina
+                        <a href="./documents/GANTT  JUAN PABLO.xlsx">
+                            <i class="fas fa-file-download"></i>
+                        </a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Sebastian Vicaña
+                        <a href="./documents/GANTT VICAÑA.xlsx">
+                            <i class="fas fa-file-download"></i>
+                        </a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Neyder Perilla
+                        <a href="./documents/GANTT NEYDER.xlsx">
+                            <i class="fas fa-file-download"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- Mapa de procesos -->
+        <div id="mapa-procesos" class="row mt-2 p-4 section">
+            <div class="col-md-4 offset-md-4">
+                <h3 Class="text-center">MAPA DE PROCESOS</h3>
+                
+                <img src="./assets/img/Mapa de procesos.png" alt="Mapa de procesos">
+            </div>
         </div>
     </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>
