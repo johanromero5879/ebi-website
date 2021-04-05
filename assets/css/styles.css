@@ -32,12 +32,15 @@
     grid-template-rows: repeat(2, 1fr);
 }
 
-.avatar{
-    text-align: center;
+.card-avatar{
+    display: flex;
+    justify-content: center;
 }
 
-.avatar img{
+.avatar{
     border-radius: 100px;
+    display: flex;
+    align-self: center;
     width: 150px;
     height: 150px;
 }
@@ -54,12 +57,29 @@
 
 .section img{
     width: 420px;
-    height: 300px
+    height: 300px;
+}
+
+#mapa-procesos{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#mapa-procesos img{
+    width: 900px;
+    height: 550px;
 }
 
 @media screen and (max-width: 600px){
     .section img{
         width: 320px;
-        height: 150px
+        height: 150px;
     }
+
+    #mapa-procesos img{
+        width: 100%;
+        height: 250px;
+    }
+    
 } 
