@@ -72,7 +72,11 @@
 
 .carousel img{
     width: 900px;
-    height: 550px;
+    height: 650px;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    opacity: 0.18 !important;
 }
 
 @media screen and (max-width: 600px){
