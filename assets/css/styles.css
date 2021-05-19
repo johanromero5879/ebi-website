@@ -115,3 +115,18 @@
     width: 900px;
     height: 500px;
 }
+
+.boton_personalizado{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #e9661b;
+    border-radius: 6px;
+  }
+
+  .boton_personalizado:hover{
+    color:#773574;
+    cursor: pointer;
+ }
