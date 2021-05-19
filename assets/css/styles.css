@@ -95,4 +95,23 @@
         height: 250px !important;
         margin-left: 0;
     }
-} 
+}
+
+#diagrama-clases{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#diagrama-clases img{
+    width: 800px;
+    height: 500px;
+}
+#diagrama-objetos{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#diagrama-objetos img{
+    width: 900px;
+    height: 500px;
+}
