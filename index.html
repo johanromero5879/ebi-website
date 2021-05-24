@@ -804,14 +804,9 @@
             </div>
         </div>
     </div>
-
     <!-- Plan De Pruebas Y Manual De Usuario-->
-    <div id="tecnicas" class="row mt-2 p-4 section bg">
-        <div class="col-md-6 section-image">
-            <img src="./assets/img/PMU.jpg">
-        </div>
-        <div class="col-md-6">
-            <h3>PLAN DE PRUEBAS</h3>
+    <div id="plan_pruebas" class="row mt-2 p-4 section bg">
+            <h3 class="text-center">PLAN DE PRUEBAS</h3>
             <p style="text-align: justify;">
                 El proyecto presente ejemplariza para la finalización del mismo un plan de pruebas cuya funcionalidad
                 principal es recolectar los casos
@@ -824,20 +819,19 @@
                 del sistema.
                 <br><br>
             </p>
-            <a href=".\documents\Plan Pruebas Funcionales.docx">1. Plan De Prueba</a>
-            <br><br>
-            <h3>MANUAL DE USUARIO</h3>
-            <br>
-            <p style="text-align: justify;">
-                El manual de usuario es un documento el cual le da la posibilidad al usuario de conocer el software
-                propuesto, a continuación encontrar un link
-                el cual nos redirigirá a este Manual en el cual observará las funcionalidades de la API y una
+            <embed src="./documents/Plan_Pruebas_Funcionales.pdf" type="application/pdf" width="100%" height="600px" />
+    </div>
+
+    <!-- Manual De Usuario-->
+    <div id="manual_usuario" class="row mt-2 p-4 section">
+        <h3 class="text-center">MANUAL DE USUARIO</h3>
+        <p style="text-align: justify;">
+            El manual de usuario es un documento el cual le da la posibilidad al usuario de conocer el software
+                propuesto, a continuación encontrara el manual,
+                 en el cual observará las funcionalidades de la API y una
                 descripción de cada una de sus fases.
-            </p>
-            <br>
-            <a href=".\documents\Manual De Usuario.pdf">2. Manual De Usuario</a>
-            </p>
-        </div>
+        </p>
+        <embed src="./documents/Manual De Usuario.pdf" type="application/pdf" width="100%" height="600px" />
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -852,7 +846,8 @@
 
     <script>
         $('.carousel').carousel({
-            interval: 8000
+            interval: 8000,
+            pause: "hover"
         })
     </script>
 
